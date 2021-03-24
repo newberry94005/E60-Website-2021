@@ -10,7 +10,7 @@ config.environment = "PreProd";
 config.firebaseConfig = {};
 config.useAuth = true;
 
-config.appLocation = "./app.html";
+config.appLocation = "./index.html";
 config.logo = "img/logo.png";
 config.logo_alt = "img/logo_alt.png";
 config.loadingImage = "img/loading.svg";
