@@ -1,0 +1,13 @@
+/******************/
+/*** HOME ***/
+/******************/
+
+#homeContainer{
+    margin-left:2.5%;
+}
+
+#profileContainer, #bodyContainer{
+    display: none;
+    margin-top:20px;
+    margin-bottom:20px;
+}
