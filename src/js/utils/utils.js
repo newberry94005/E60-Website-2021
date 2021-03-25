@@ -334,7 +334,7 @@ utils.setPhoneNumberEntry = (who, dot=false)=>{
         dot = "";
     }
     $(who).on("keyup", function(){
-        str = $(this).val().replace(/[^0-9]+?/g, '');
+        let str = $(this).val().replace(/[^0-9]+?/g, '');
         if(str.length == 7){
             str = str.substr(0,3)+dash+dot+str.substr(3,4);
         }else if(str.length == 10){

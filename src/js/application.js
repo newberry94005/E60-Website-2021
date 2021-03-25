@@ -69,6 +69,7 @@ function setWindowChecks(){
 // HANDLE LOGGING INFORMATION
 // REQUIRES LOGGING AND ENVIRONMENT GLOBAL OBJECTS
 function consoleLogger(message){
-    if(config.logging)
-    console.log(config.environment + " Logs: "+ message);
+    if(config.logging){
+        console.log(config.environment + " Logs: "+ message);
+    }
 }
