@@ -7,3 +7,5 @@ src/video/For Families_9-5-16.mp4
 src/video/Davey Jones Story Version.mp4
 src/video/Q&A_9-5-16.mp4
 .gitignore
+src/js/config.js
+src/js/config.min.js
