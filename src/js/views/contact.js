@@ -1,16 +1,16 @@
 let contact = {};
 
 // SET TO RUN AUTOMATICALLY WHEN JS IS CALLED
-contact.autoRun = true;
+contact.autoRun = false;
 
 // SET THE LOCATION TO PLACE THE CONTACT FORM
 contact.location = "#contact";
 
 // SET THE TEXT AT THE TOP OF THE CONTACT FORM
-contact.contactText = "Inquiries to Waiver Creator can be submitted via the contact form and we will get back to you as soon as possible.  Thanks for using Waiver Creator!";
+contact.contactText = "Please use this form to reach out to us.  If this is a group inquiry, please include the size of your group and date you wish to play.  Thanks!";
 
 // SET THE MAIN BUTTON COLOR
-contact.buttonColor = 'linear-gradient(to right, rgb(7, 12, 52) 0px, rgb(38, 34, 255) 92%)';
+contact.buttonColor = 'red';
 
 
 
@@ -25,6 +25,8 @@ contact.setContactPage = (where)=>{
 
     //USER HAS PRESSED THE SEND BUTTON
     $("#sendMessageButton").off().on("click", function(){
+
+        console.log("clicked");
         
         //NAME IS REQUIRED
         if (!($("#contactName").val())){

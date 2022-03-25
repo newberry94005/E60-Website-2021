@@ -27,7 +27,7 @@ utils.showLoading = (loadingText="Loading...", where="body", skel = null, sectio
         let skelFrame = skel("_"+sectionLoading);
         
         // Hide the existing real data
-        $('#'+sectionLoading).hide();
+        //$('#'+sectionLoading).hide();
 
         // Show the Skeleton
         $(where).append(skelFrame);
@@ -52,7 +52,7 @@ utils.stopLoading = (skelToRemove=null, sectionToShow=null)=>{
 
     // If there is a skel to remove, remove it
     if(skelToRemove){
-        $("#_"+skelToRemove).remove();
+        $("#_"+skelToRemove).fadeOut();
     }
     
     // If there is something to show after, show it
@@ -65,9 +65,11 @@ utils.stopLoading = (skelToRemove=null, sectionToShow=null)=>{
 // example http://www.app.com/app.html#home?me?you?someone
  
 utils.processURL = ()=>{
-    let urlObj = {view:"",args:[]};
+    let urlObj = {view:"",args:[], rootURL:""};
     let viewArg = window.location.href.split("#")[1];
     let customArgs = window.location.href.split("?");
+    let rootURL = window.location.href.split(".html")[0].split("/").pop();
+    
     customArgs.shift();
  
     if(viewArg){  
@@ -76,6 +78,7 @@ utils.processURL = ()=>{
     if(customArgs){
         urlObj.args = customArgs;
     }
+    urlObj.rootURL = rootURL;
 
     return urlObj;
 }
@@ -191,7 +194,7 @@ utils.momentDayTimeFormat = (timeObj)=>{
     return dayFormat;  
 }
 utils.momentGetTimeFormat = (timeObj = moment().format())=>{
-    var time = moment(timeObj).format("h:mm:ss A");
+    var time = moment(timeObj).format("h:mma");
     return time;
 }
 utils.momentGetTodayDay = ()=>{
@@ -255,7 +258,7 @@ utils.scrollToItem = (who, useDocumentBody=false, animationTime=300)=>{
 
 // CHECK FOR MOBILE WIDTH AND RETURN IF IT'S MOBILE
 // REQUIRES WINDOW.WIDTH
-utils.checkForMobile = (threshold = 415)=>{
+utils.checkForMobile = (threshold = 767)=>{
     let isMo = false;
     if($(window).width() <= threshold){
         isMo = true;
@@ -283,7 +286,7 @@ utils.checkForIOS = ()=>{
 
 // CHECK FOR ANDROID PHONE
 // REQUIRES PREVIOUS ORIENTATION GLOBAL OBJECT 
-utils.checkForAndroid = ()=>{
+utils.checkForAndroid = ()=>{ 
     let isAnd = false;
     const ua = navigator.userAgent.toLowerCase();
     isAnd = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
@@ -569,7 +572,7 @@ utils.readCookie = (key)=> {
 		while (c.charAt(0)==' ') c = c.substring(1,c.length);
 		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
 	}
-	return null;
+	return null; 
 } 
   
 utils.removeCookie = (key,value) =>{

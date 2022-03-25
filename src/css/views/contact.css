@@ -5,12 +5,14 @@
     margin: 0 15px; 
     text-align: justify;
 }
+
 .contact_input{
     width: 100%;
-    border: 1px solid #dddddd;
+    border: 1px solid #333;
     padding: 10px;
     outline: none;
 }
+
 .contact_box{
     background: #FFF;
     padding: 30px;
@@ -19,6 +21,7 @@
     margin: 0 auto;
     color: grey;
     max-width: 800px;
+    margin-bottom: 10vh;
 
 }
 #contactForm input, #contactForm textarea{
@@ -37,6 +40,7 @@
 .check_button{
     margin-right: 10px;
 }
+
 .check_button label, .check_button input {
     padding: 10px;
     padding-left: 20px;
@@ -66,7 +70,7 @@
     padding: 12px 24px;
     border-radius: 25px;
     color: white;
-    background: linear-gradient(to right, rgb(0, 26, 255) 0%, rgb(38, 34, 255) 92%);
+    background: red;
     transition: .3s;
 }
 .ft_button:hover{
@@ -78,4 +82,21 @@
 .upload_input {
     margin-top: 15px;
     margin-bottom: 35px;
+}
+
+
+/*************************/
+/***** MEDIA QUERIES *****/
+/*************************/
+
+@media only screen and (max-width: 1000px) {
+
+    .contact_box{
+        padding: unset;
+        width: 90%;
+    }
+
+    .reason_line{
+        margin-bottom: 25px;
+    }
 }

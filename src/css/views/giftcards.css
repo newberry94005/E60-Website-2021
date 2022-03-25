@@ -1,0 +1,31 @@
+#giftcards{
+    display: none;
+}
+
+.gift_card_img_container{
+    text-align: center;
+}
+
+.gift_card_img_container img{
+    width: 400px;
+}
+
+
+
+
+
+/*************************/
+/***** MEDIA QUERIES *****/
+/*************************/
+
+@media only screen and (max-width: 1000px) {
+
+    .gift_card_img_container{
+        height: 30vh;
+    }
+
+    .gift_card_img_container img{
+        width: 100%;
+    }
+
+}

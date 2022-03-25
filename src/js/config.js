@@ -6,7 +6,10 @@ let config = {};
 config.logging = false;
 config.analytics = false;
 
-config.environment = "PreProd";
+/// UPDATE TO "Prod" BEFORE DEPLOYING TO PROD
+config.environment = "TEST";
+
+
 config.firebaseConfig = {};
 config.useAuth = true;
 
@@ -20,24 +23,31 @@ config.secondaryColor = "#f9f9f9";
 config.tercieryColor = "#e6e6e6";
 
 config.urlQuery = utils.processURL();
+console.log(config.urlQuery);
 
 
 if(config.environment != "Prod"){
+    config.logging = true;
+    config.analytics = false;
+    config.firebaseConfig = {
+        apiKey: "AIzaSyBdaVyQ9AWdbMYxNecb1QEtlupKW8grEBo",
+        authDomain: "e60website.firebaseapp.com",
+        projectId: "e60website",
+        storageBucket: "e60website.appspot.com",
+        messagingSenderId: "477956792217",
+        appId: "1:477956792217:web:3b88e391047952357ebd08"	
+    };
+}else{
     config.logging = false;
     config.analytics = true;
     config.firebaseConfig = {
-        apiKey: "AIzaSyDBsaaW6KfkCe1J9Qn5ByIFUVWq86EIP2M",
-        authDomain: "wc-preprod.firebaseapp.com",
-        databaseURL: "https://wc-preprod.firebaseio.com",
-        projectId: "wc-preprod",
-        storageBucket: "wc-preprod.appspot.com",
-        messagingSenderId: "778110672403",
-        appId: "1:778110672403:web:fa777e43ab2328d8dc69e6"	
+        apiKey: "AIzaSyBdaVyQ9AWdbMYxNecb1QEtlupKW8grEBo",
+        authDomain: "e60website.firebaseapp.com",
+        projectId: "e60website",
+        storageBucket: "e60website.appspot.com",
+        messagingSenderId: "477956792217",
+        appId: "1:477956792217:web:3b88e391047952357ebd08"
     };
-}else{
-    config.logging = true;
-    config.analytics = false;
-    config.firebaseConfig = {};
 }
 
 // INITALIZE FIREBASE

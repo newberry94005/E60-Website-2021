@@ -1,0 +1,39 @@
+#cb_main   { display: table; width: 100%; table-layout: fixed; }
+#finalPromotionPrompt { display: table-header-group !important; width: 100%; height: 50px;}
+#finalPromotionPrompt a {font-size: 14pt; text-decoration: none;}
+
+.cb_normalText {
+margin:5px;
+}
+
+#acceptDisclaimer {
+
+margin-left:35%; 
+margin-top:15px;
+width: 5%;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+margin: 2px;
+}
+
+.field > div[style] {
+height: 50px !important;
+}
+
+.bookeocss .gobutton .smallbLeft, .bookeocss .gobutton .smallbRight { color: white; background-image:none; background-color: #DC0720;}
+
+.bookeocss  .cb_summaryArea {
+display:none;
+}
+
+.bookeocss .cb_reviewintro {
+display:none;
+}

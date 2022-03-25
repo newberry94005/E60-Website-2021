@@ -1,0 +1,48 @@
+{
+    "roomInfo":{
+        "DAVY":{
+            "boxID": "pirateContainer",
+            "boxName": "pirateBox",
+            "roomName": "DAVY JONES' LOCKER",
+            "roomInfo": "<span>2-8 PLAYERS</span><span>6/10 DIFFICULTY</span>",
+            "roomOrder": 0,
+            "productID": "3154TMWNLY14911CC5E46",
+            "viewName": "#davyRoom",
+            "backgroundImage": "url(img/piratebg_small.jpg)",
+            "keyName": "DAVY"
+        },
+        "EGYPT":{
+            "boxID": "egyptContainer",
+            "boxName": "egyptBox",
+            "roomName": "THE EGYPTIAN CHAMBER",
+            "roomInfo": "<span>2-8 PLAYERS</span><span>6/10 DIFFICULTY</span>",
+            "roomOrder": 1,
+            "productID": "3154AJHXW416399FAE1FE",
+            "viewName": "#egyptRoom",
+            "backgroundImage": "url(img/egyptbg_small.jpg)",
+            "keyName": "EGYPT"
+        },
+        "RANSOM":{
+            "boxID": "ransomContainer",
+            "boxName": "ransomBox",
+            "roomName": "RANSOM",
+            "roomInfo": "<span>2-8 PLAYERS</span><span>6/10 DIFFICULTY</span>",
+            "roomOrder": 2,
+            "productID": "3154ULCRE614911CA3D40",
+            "viewName": "#ransomRoom",
+            "backgroundImage": "url(img/ransombg_small.jpg)",
+            "keyName": "RANSOM"
+        },
+        "CASINO":{
+            "boxID": "casinoContainer",
+            "boxName": "casinoBox",
+            "roomName": "ROULETTE ME OUT",
+            "roomInfo": "<span>2-8 PLAYERS</span><span>6/10 DIFFICULTY</span>",
+            "roomOrder": 3,
+            "productID": "3154ULCRE614911CA3D40",
+            "viewName": "#rouletteRoom",
+            "backgroundImage": "url(img/casinobg_small.jpg)",
+            "keyName": "CASINO"
+        }
+    }
+}
