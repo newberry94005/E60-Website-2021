@@ -10,3 +10,5 @@ src/video/Q&A_9-5-16.mp4
 src/js/config.js
 src/js/config.min.js
 functions/index.js
+functions/index.min.js
+functions/firebase-debug.log

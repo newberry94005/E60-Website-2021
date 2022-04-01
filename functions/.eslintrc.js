@@ -11,5 +11,6 @@ module.exports = {
   rules: {
     "max-len": ["error", {"code": 1000}],
     "quotes": ["error", "double"],
+    "require-jsdoc": "off",
   },
 };
