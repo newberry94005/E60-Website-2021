@@ -652,28 +652,28 @@ templates.groupsPage = ()=>{
             <div class="col-lg-12 page_header">
                 <span class="page_title">GROUPS</span><br><br>
                 <span class="page_tagline">Want to bring your whole team?</span><br><br>
-                <span class="page_long_desc">Escape in 60 is a great team building experience!  Please contact us to host your next
-                corporate event, church group or anyone other type of larger group.</span><br><br>
-                <span class="page_short_desc">Click or tap the "Contact Us" button for more info</span>
+                <span class="page_long_desc">Escape in 60 is a great team building experience!  Please book your next
+                corporate event, church group, or anyone other type of larger group online.</span><br><br>
+                <span class="page_short_desc">Click or tap the "Book Group (9+)" button to start your group booking.</span>
             </div>
 
             <div class="group_outer col-lg-12">
                 
                 <div class="group_container col-lg-8 offset-lg-2 row">
                     <div class="group_name col-lg-5">
-                        <span>STANDARD ESCAPE EXPERIENCE</span>
-                        <span>PLAYERS 2 - 10</span>
+                        <span>GROUP ESCAPE EXPERIENCE</span>
+                        <span>9+ PLAYERS </span>
                     </div>
                     <div class="group_desc col-lg-7">
                         <div class="group_image">    
                             <img src="img/Pirate2-400x480.jpg">
                         </div>
                         <br><br>
-                        You can call or book online for any of our available rooms. You may choose to pay $28 per person and book only the number of slots required for your party, in which case you may be paired with other people, or pay an extra fee to book a private room. <br><br>Groups of more than 8 should call us and we will personally handle your booking for you. Please note games will start according to the published schedule, with staggered starts. Contact us for information and booking.
+                        You can call or book online for any of our available rooms. We offer group booking online to make it easy to gather your party and join us on an Escape Adventure. <br><br>Groups of more than 9 should use the "Book Group (9+)" button below to get started.
                     </div>
                 </div>
                 <div class="col-lg-8 offset-lg-2 contact_us">
-                    Contact Us
+                    Book Group (9+)
                 </div>
             </div>
 

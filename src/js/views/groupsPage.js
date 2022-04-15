@@ -16,10 +16,9 @@ groups.setGroupLinks = ()=>{
 
     $(".contact_us").off().on("click" , function(){
         
-        contact.setContactPage(contact.location);
-
-        scrollToTop();
-
+        //contact.setContactPage(contact.location);
+        //scrollToTop();
+        window.open("/app/groupbooking.html","_self");
     })
 }
 

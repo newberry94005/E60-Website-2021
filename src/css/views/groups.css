@@ -36,7 +36,7 @@
     display: flex; 
     align-items: center; 
     justify-content: center;
-    background: #10a2de;
+    background: #dd0e0c;
     color: white;
     cursor: pointer;
     transition: .3s;
@@ -45,7 +45,7 @@
 }
 
 .contact_us:hover{
-    background: #3a9bc2;
+    background: red;
 }
 
 .group_image{
