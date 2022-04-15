@@ -470,7 +470,7 @@ templates.footer = (year)=>{
                             <div class="hours_block hours_left col-7">${home.hoursInfo.displayHours.saturday}</div>
                         </div>
                         <div class="hours_line col-12 row" style="padding-top:20px;">
-                            <div class="hours_block">If you are interested in a group booking (10 or more) and would like to reserve a room outside of our normal business hours, please email us at <a href="mailto:info@escape60.com?Subject=Group%20Hours">info@escape60.com</a></div>
+                            <div class="hours_block">If you are interested in a group booking (9 or more) and would like to reserve a room outside of our normal business hours, please email us at <a href="mailto:info@escape60.com?Subject=Group%20Hours">info@escape60.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -572,7 +572,7 @@ templates.faqs= ()=>{
                 <div class="col-lg-8 offset-lg-2 question_block">
                     <div class="down_arrow"><i class="fal fa-chevron-down"></i></div>
                     <div class="question">How much does it cost to play?</div>
-                    <div class="answer">Each game is $28 per person.</div>
+                    <div class="answer">Each game is $32.99 per person.</div>
                 </div>
                 <div class="col-lg-8 offset-lg-2 question_block">
                     <div class="down_arrow"><i class="fal fa-chevron-down"></i></div>
@@ -588,7 +588,7 @@ templates.faqs= ()=>{
                 <div class="col-lg-8 offset-lg-2 question_block">
                     <div class="down_arrow"><i class="fal fa-chevron-down"></i></div>
                     <div class="question">Will I be grouped with other people?</div>
-                    <div class="answer">Groups of less than 8 people can be paired with other groups if they do not book a private escape experience. Booking a private room does incur a fee that varies according to the day and time of the room being booked. If you have questions, please feel free to call or text us.</div>
+                    <div class="answer">Groups of less than 8 people can be paired with other groups if they do not book a private room. Private rooms are available.</div>
                 </div>
                 <div class="col-lg-8 offset-lg-2 question_block">
                     <div class="down_arrow"><i class="fal fa-chevron-down"></i></div>
@@ -633,7 +633,7 @@ templates.faqs= ()=>{
                 <div class="col-lg-8 offset-lg-2 question_block">
                     <div class="down_arrow"><i class="fal fa-chevron-down"></i></div>
                     <div class="question">How do I book a game?</div>
-                    <div class="answer">Reservations to play must be made on our website or by calling in. All games must be paid for at the time of booking.</div>
+                    <div class="answer">For your convenience reservations to play can be made on our website. All reservations must be paid for at the time of booking.</div>
                 </div>
 
             </div>
