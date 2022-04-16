@@ -515,6 +515,15 @@ function csd(objectSortDirection,key){
 
 
 
+// HANDLE LOGGING INFORMATION
+// REQUIRES LOGGING AND ENVIRONMENT GLOBAL OBJECTS
+utils.consoleLogger = (message)=>{
+    if(config.logging){
+        console.log(config.environment + " Logs: "+ message);
+    }
+}
+
+
 // Private Help Utilities ///
 
 const firstBy = (function() {

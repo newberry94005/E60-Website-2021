@@ -18,7 +18,7 @@ $(document).ready(function() {
 });
 
 app.init = ()=>{
-    consoleLogger("Initializing...");
+    utils.consoleLogger("Initializing...");
         
     // MISC SETUP 
     viewManager.startHistoryListener();
@@ -87,8 +87,7 @@ function setHomeRoomBoxes(){
 
 async function getAPIDataForRoomBoxes(){
     if(header.refreshData){
-        consoleLogger("REFRESHING API DATA");
-       
+        utils.consoleLogger("REFRESHING API DATA");
         
         let roomName = "davy";
         for(let item in home.roomInfo){
@@ -158,10 +157,3 @@ function setWindowChecks(){
 }
 
 
-// HANDLE LOGGING INFORMATION
-// REQUIRES LOGGING AND ENVIRONMENT GLOBAL OBJECTS
-function consoleLogger(message){
-    if(config.logging){
-        console.log(config.environment + " Logs: "+ message);
-    }
-}

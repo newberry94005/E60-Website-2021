@@ -8,10 +8,10 @@ viewManager.registerView = (view, go=true, args)=>{
     // Set to false if you just want to register/update the URL Query but not reload the page
     
     if(config.urlQuery.rootURL === "booknow" || config.urlQuery.rootURL === "booknow_voucher"){
-        consoleLogger(config.urlQuery.rootURL);
+        utils.consoleLogger(config.urlQuery.rootURL);
         window.open("index.html"+view,"_self");
     }else{
-        consoleLogger(utils.momentGetTimeFormat(moment().format())+": "+"Changing View To "+ view);
+        utils.consoleLogger(utils.momentGetTimeFormat(moment().format())+": "+"Changing View To "+ view);
         history.pushState(args, '', view );
         
         if(go){
@@ -158,7 +158,7 @@ viewManager.cleanViews = ()=>{
 }
 
 viewManager.goHome = ()=>{
-    consoleLogger("Couldn't find page, returning home...");
+    utils.consoleLogger("Couldn't find page, returning home...");
     viewManager.currentView = "home";
     viewManager.registerView("#home");
 }
@@ -168,8 +168,21 @@ viewManager.stopAllVideos = ()=>{
 }
 
 viewManager.bookNow = (referrer)=>{
-    viewManager.bookNowAnalytics(referrer);
-    window.open("booknow.html", "_self");
+
+    utils.showSwal("Select An Option", "A group is 9 or more participants.", "question", true, true, "Book Group (9+)", true, "Book Now",false,null,"center",null,true,true,config.primaryColor,"#64af8d").then((result)=>{
+        console.log(result);
+        if(result){
+            viewManager.bookNowAnalytics(referrer);
+            window.open("booknow.html", "_self");
+        }
+    }).catch((result)=>{
+        console.log("cancel");
+        console.log(result);
+        if(result.dismiss == "cancel"){
+            viewManager.bookNowAnalytics("GROUP");
+            window.open("app/groupbooking.html", "_self");
+        }
+    })
 }
 viewManager.bookNowVoucher = (referrer)=>{
     viewManager.bookNowAnalytics(referrer);

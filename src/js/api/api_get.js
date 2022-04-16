@@ -3,14 +3,14 @@ const apiGet = {};
 // GET ALL APP DATA
 apiGet.getAppData = ()=>{
     return database.ref('/roomInfo').once('value').then(function(data) {
-        consoleLogger("Received all data...");
+        utils.consoleLogger("Received all data...");
         return data.val();
     }).catch( function(error) { consoleLogger(error.message) } );
 }
 
 apiGet.getHoursData = ()=>{
     return database.ref('/hoursInfo').once('value').then(function(data) {
-        consoleLogger("Received hours data...");
+        utils.consoleLogger("Received hours data...");
         return data.val();
     }).catch( function(error) { consoleLogger(error.message) } );
 }
@@ -32,7 +32,7 @@ apiGet.getAvailability = (productID)=>{
             "endDateTime":endDateTime
         };
         callItem(sendObj).then(function(result) {
-            consoleLogger(result.data);
+            utils.consoleLogger(result.data);
             resolve(result.data);
         });
     }) 
