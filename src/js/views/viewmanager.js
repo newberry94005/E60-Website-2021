@@ -169,7 +169,7 @@ viewManager.stopAllVideos = ()=>{
 
 viewManager.bookNow = (referrer)=>{
 
-    utils.showSwal("Select An Option", "A group is 9 or more participants.", "question", true, true, "Book Group (9+)", true, "Book Now",false,null,"center",null,true,true,config.primaryColor,"#64af8d").then((result)=>{
+    utils.showSwal("Select An Option", "A group is 9 or more participants.", "question", true, true, "Book Group (9+)", true, "Book Now (1-8 players)",false,null,"center",null,true,true,"#3085d6","#64af8d").then((result)=>{
         console.log(result);
         if(result){
             viewManager.bookNowAnalytics(referrer);

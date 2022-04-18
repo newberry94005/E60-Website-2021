@@ -669,7 +669,7 @@ templates.groupsPage = ()=>{
                             <img src="img/Pirate2-400x480.jpg">
                         </div>
                         <br><br>
-                        You can call or book online for any of our available rooms. We offer group booking online to make it easy to gather your party and join us on an Escape Adventure. <br><br>Groups of more than 9 should use the "Book Group (9+)" button below to get started.
+                        We offer group booking online to make it easy to gather your party and join us on an Escape Adventure. <br><br>Groups of more than 9, click below on "Book Group (9+)" to reserve your room.
                     </div>
                 </div>
                 <div class="col-lg-8 offset-lg-2 contact_us">
