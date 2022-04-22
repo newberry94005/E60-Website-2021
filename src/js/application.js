@@ -92,7 +92,7 @@ async function getAPIDataForRoomBoxes(){
         let roomName = "davy";
         for(let item in home.roomInfo){
             roomName = home.roomInfo[item].keyName.toLowerCase();
-            console.log(roomName);
+            //console.log(roomName);
 
             //Example: Davy Jones Product ID - 3154TMWNLY14911CC5E46
             utils.showLoading("","#"+home.roomInfo[item].boxID, templates.availabilityLoader, roomName+"Loader");

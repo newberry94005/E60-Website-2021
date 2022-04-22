@@ -6,7 +6,7 @@ groups.setGroupsPage = ()=>{
 
     $(groups.location).html(templates.groupsPage());
     
-    console.log("inside groups page");
+    //console.log("inside groups page");
 
     groups.setGroupLinks();
     
