@@ -469,9 +469,6 @@ templates.footer = (year)=>{
                             <div class="hours_block hours_right col-5">SAT:</div>
                             <div class="hours_block hours_left col-7">${home.hoursInfo.displayHours.saturday}</div>
                         </div>
-                        <div class="hours_line col-12 row" style="padding-top:20px;">
-                            <div class="hours_block">If you are interested in a group booking (9 or more) and would like to reserve a room outside of our normal business hours, please email us at <a href="mailto:info@escape60.com?Subject=Group%20Hours">info@escape60.com</a></div>
-                        </div>
                     </div>
                 </div>
             </div>
