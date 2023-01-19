@@ -331,15 +331,17 @@ templates.header = ()=>{
         <!-- ICON Banner -->
         <!--
         <div id="annoucementBanner">
-        <div style="padding:10px;display:inline-block;"><i style="font-size:30pt;" class="fal fa-user-hard-hat"></i>  </i></div>
-        <div style="width:90%;display:inline-block;"><span>Escape in 60 is currently closed until Tuesday, January 19th, as we prepare for our expansion. Thank you for visiting our website and we will see you on the 19th!</span></div></div>
+        <div style="padding:10px;display:inline-block;"><i style="font-size: 30pt;" class="fa-solid fa-drumstick-bite"></i></div>
+        <div style="width:90%;display:inline-block;"><span>We are open on Thanksgiving Day, November 24th from 3pm to 830pm. Come celebrate Thanksgiving with us!</span></div></div>
         -->
         <!-- IMAGE Banner -->
+        
         <!--
         <div id="annoucementBanner">
-        <div style="display:inline-block;vertical-align: middle;max-height: 80px;padding-right: 10px;"><img style="width: 100%;height: 100%;" src="img/vday.png" /></div>
-        <div style="display:inline-block;font-size: 17pt;"><span>We are open Monday, February 14th from 3pm to 10pm. Come celebrate Valentine's Day with US!</span></div></div>
+        <div style="display:inline-block;vertical-align: middle;padding-right: 10px;"><img style="width: 100%;height: 100%; max-height: 80px;" src="img/thanksgiving.png" /></div>
+        <div style="display:inline-block;font-size: 17pt;"><span>We are open on Thanksgiving Day, November 24th from 3pm to 8:30pm. Come celebrate Thanksgiving with us!</span></div></div>
         -->
+
         <div>
             <div id="headerContainer">
                 <div id="gamesButton" class="header_item">GAMES</div>
@@ -368,12 +370,14 @@ templates.header = ()=>{
         </div>
     </div>
     <div id="choiceAwardBannerMobile"><span>Tripadvisor Travelers' Choice 2021!</span><img src="img/choiceLogo.png"></div>
+    
     <!--
     <div id="annoucementBannerMobile">
-        <div style="display:inline-block;vertical-align: middle;max-height: 80px;padding-right: 10px;"><img style="width: 100%;height: 100%;" src="img/vday.png" /></div>
-        <div style="style="display:inline-block;font-size: 17pt;""><span>We are open Monday, February 14th from 3pm to 10pm. Come celebrate Valentine's Day with US!</span></div>
+        <div style="display:inline-block;vertical-align: middle;max-height: 80px;padding-right: 10px;"><img style="width: 100%;height: 100%;" src="img/thanksgiving.png" /></div>
+        <div style="style="display:inline-block;font-size: 17pt;""><span>We are open on Thanksgiving Day, November 24th from 3pm to 8:30pm. Come celebrate Thanksgiving with us!</span></div>
     </div>
     -->
+
     <div class="nav_slider">
 	    <div class="nav_slider_container">
 		    <!--<div class="nav_close_button"><i class="fal fa-times-circle"></i></div>-->

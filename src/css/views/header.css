@@ -50,17 +50,18 @@
     color: white;
 }
 #annoucementBanner{
-    background: #e5447c;
+    background: #ffa90d;
     position: relative;
     top: 0;
     left: 0;
     padding: 10px;
     color: #fff;
     font-size: 14pt;
-    border: 16px solid #191919;
+    /*border: 16px solid #191919;*/
     border-bottom: 0px;
     text-align: center;
     cursor: pointer;
+    color: #000;
 }
 
 #choiceAwardBannerMobile, #annoucementBannerMobile{
@@ -216,7 +217,7 @@
     }
     #annoucementBannerMobile{
         width: 100%;
-        background: #e5447c;
+        background: #ffa90d;
         position: relative;
         top: 80px;
         padding: 10px;
@@ -225,7 +226,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        color: #fff;
+        color: #000;
         z-index: 5;
     }
 }
