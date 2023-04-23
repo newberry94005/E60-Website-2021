@@ -188,23 +188,6 @@ templates.availabilityInfoRoom = (time,number,max)=>{
     return returnHTML;
 }
 
-
-templates.homeBoxStructure = (box1, box2, box3, box4)=>{
-    let returnHTML = `
-    <div class="other_rooms_header">ESCAPE ADVENTURES!</div>
-    
-    <div class="box_row row">
-        ${box1}
-        ${box2}
-    </div>
-    <div class="box_row row">
-        ${box3}
-        ${box4}
-    </div>
-    `
-    return returnHTML;
-}
-
 templates.fullAvailabilityBox = ()=>{
     let returnHTML = 
             `<div class="col-12 no_game_container">
@@ -233,7 +216,7 @@ templates.fullAvailabilityBoxRoom = ()=>{
 templates.gameBoxes = (boxID, boxName, roomName, roomInfo, roomCapacity, roomBG, roomLogo, tagline)=>{
     let returnHTML = 
     `
-    <div id="${boxID}" class="box_desc col-lg-5" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), ${decodeURI(roomBG)};background-size: cover; background-position: center center;">
+    <div id="${boxID}" class="box_desc" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), ${decodeURI(roomBG)};background-size: cover; background-position: center center;">
         <div>
             <img src="${roomLogo}">
         </div>
@@ -255,7 +238,7 @@ templates.gameBoxes = (boxID, boxName, roomName, roomInfo, roomCapacity, roomBG,
 templates.otherGameBoxes = (boxID, boxName, roomName, roomInfo, roomCapacity, roomBG, roomLogo, tagline)=>{
     let returnHTML = 
     `
-    <div id="${boxID}" class="box_desc col-lg-4" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), ${decodeURI(roomBG)};background-size: cover; background-position: center center;">
+    <div id="${boxID}" class="box_desc" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), ${decodeURI(roomBG)};background-size: cover; background-position: center center;">
         <div>
             <img src="${roomLogo}">
         </div>

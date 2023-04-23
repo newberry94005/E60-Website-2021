@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     margin: 5vh 0;
+    flex-wrap: wrap;
 }
 
 .box_desc{
@@ -47,6 +48,9 @@
     max-width: 500px;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    cursor: pointer;
+    flex-basis: 42vw;
+    position: relative;
 }
 
 
@@ -152,6 +156,12 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 25px;
+    transition: .2s all;
+
+}
+.learn_button:hover{
+    opacity: .8;
+    transition: .2s all;
 }
 
 .no_game_container{
@@ -176,14 +186,22 @@
     width: 50%;
     border-radius: 25px;
     margin: 0 auto;
+    transition: .2s all;
 }
+.no_game_button:hover{
+    opacity: .8;
+    transition: .2s all;
+}
+
 .no_game_button_room{
     border: 2px solid grey;
     padding: 1vh;
     width: 50%;
     border-radius: 25px;
     margin: 0 auto;
+    cursor: pointer;
 }
+
 .bookeo_box_room{
     width: 100%;
     margin: 0 auto;
@@ -233,7 +251,9 @@
     border-radius: 30px;
     padding: 15px 40px;
     font-size: 15px;
+    cursor: pointer;
 }
+
 
 .calendar_container{
     line-height: 1.4;
@@ -443,11 +463,11 @@
 /*********************/
 /***** ROOM PAGE *****/
 /*********************/
-#davyRoom, #egyptRoom, #casinoRoom, #ransomRoom{
+#davyRoom, #egyptRoom, #casinoRoom, #ransomRoom, #witchRoom{
     display: none;
 }
 
-#_davyLoader, #_egyptLoader, #_ransomLoader, #_casinoLoader{
+#_davyLoader, #_egyptLoader, #_ransomLoader, #_casinoLoader, #_witchLoader{
     width: 100%;
     margin: 0;
     min-height: 15vh;
@@ -495,6 +515,13 @@
 
 #casinoRoom .room_pic{
     background: url('../../img/CasinoBgrnd.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    height: 80vh;
+}
+
+#witchRoom .room_pic{
+    background: url('../../img/WitchsHut.jpg'); 
     background-size: cover; 
     background-position: center center; 
     height: 80vh;
@@ -565,6 +592,7 @@
 
     .box_desc{
         margin-bottom: 5vh;
+        flex-basis: 85vw;
     }
 
     .div_header{

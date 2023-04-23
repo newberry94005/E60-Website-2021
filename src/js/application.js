@@ -67,7 +67,7 @@ function calculateRoomOrder(){
 }
 
 function setHomeRoomBoxes(){
-    $("#gameBoxes ").html('');
+    $("#gameBoxRow").html('');
     let boxItems = [];
     for(let item of home.roomOrder){
         boxItems.push(templates.gameBoxes(
@@ -81,7 +81,11 @@ function setHomeRoomBoxes(){
             home.roomInfo[item].tagline
             ));
     }
-    $("#gameBoxes").append(templates.homeBoxStructure(boxItems[0],boxItems[1],boxItems[2],boxItems[3]));
+    for(let i=0;i<boxItems.length;i++){
+        $("#gameBoxRow").append(boxItems[i]);
+    }
+
+
     
 }
 
