@@ -29,7 +29,7 @@
     "roomLogo": "logos/DaveyJones_Logo_onBlackv7.png",
     "roomMaxAvailable": 8,
     "roomName": "DAVY JONES' LOCKER",
-    "roomOrder": 2,
+    "roomOrder": 4,
     "tagline": "Blackbeard has stolen your treasure!",
     "viewName": "#davyRoom"
   },
@@ -42,11 +42,11 @@
     "productID": "3154AJHXW416399FAE1FE",
     "rating": "Family Friendly",
     "roomCapacity": "<span>2-8 PLAYERS</span>",
-    "roomInfo": "6/10",
+    "roomInfo": "7/10",
     "roomLogo": "logos/egyptian_chamber_final_small.png",
     "roomMaxAvailable": 8,
     "roomName": "THE EGYPTIAN CHAMBER",
-    "roomOrder": 1,
+    "roomOrder": 5,
     "tagline": "Your Pharaoh has just passed into the afterlife.",
     "viewName": "#egyptRoom"
   },
@@ -59,16 +59,16 @@
     "productID": "3154ULCRE614911CA3D40",
     "rating": "Parental Guidance",
     "roomCapacity": "<span>2-8 PLAYERS</span>",
-    "roomInfo": "8/10",
+    "roomInfo": "7/10",
     "roomLogo": "logos/Ran_Red_Messv2.png",
     "roomMaxAvailable": 8,
     "roomName": "RANSOM",
-    "roomOrder": 4,
+    "roomOrder": 2,
     "tagline": "Your child has been taken!",
     "viewName": "#ransomRoom"
   },
   "WITCH": {
-    "backgroundImage": "url(img/WitchsHut.jpg)",
+    "backgroundImage": "url(img/attic_bg_edit.jpg)",
     "bookeoImage": "logos/witch_logo_small.png",
     "boxID": "witchContainer",
     "boxName": "witchBox",
@@ -83,5 +83,22 @@
     "roomOrder": 0,
     "tagline": "End the witch's reign of soul snatching!",
     "viewName": "#witchRoom"
+  },
+  "AFTERHOURS": {
+    "backgroundImage": "url(img/afterhours_bg.jpg)",
+    "bookeoImage": "logos/afterhours_bookeo_thumb.png",
+    "boxID": "afterhoursContainer",
+    "boxName": "afterhoursBox",
+    "keyName": "AFTERHOURS",
+    "productID": "3154W73EAP187C567FCB9",
+    "rating": "Family Friendly",
+    "roomCapacity": "<span>2-6 PLAYERS</span>",
+    "roomInfo": "6/10",
+    "roomLogo": "logos/afterhours_logo_small.png",
+    "roomMaxAvailable": 6,
+    "roomName": "AFTERHOURS",
+    "roomOrder": 1,
+    "tagline": "Crown your collection with the rarest LettuceHead!",
+    "viewName": "#afterhoursRoom"
   }
 }

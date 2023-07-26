@@ -463,11 +463,11 @@
 /*********************/
 /***** ROOM PAGE *****/
 /*********************/
-#davyRoom, #egyptRoom, #casinoRoom, #ransomRoom, #witchRoom{
+#davyRoom, #egyptRoom, #casinoRoom, #ransomRoom, #witchRoom, #afterhoursRoom{
     display: none;
 }
 
-#_davyLoader, #_egyptLoader, #_ransomLoader, #_casinoLoader, #_witchLoader{
+#_davyLoader, #_egyptLoader, #_ransomLoader, #_casinoLoader, #_witchLoader, #_afterhoursLoader{
     width: 100%;
     margin: 0;
     min-height: 15vh;
@@ -521,7 +521,14 @@
 }
 
 #witchRoom .room_pic{
-    background: url('../../img/WitchsHut.jpg'); 
+    background: url('../../img/attic_bg_edit.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    height: 80vh;
+}
+
+#afterhoursRoom .room_pic{
+    background: url('../../img/afterhours_room_bg.png'); 
     background-size: cover; 
     background-position: center center; 
     height: 80vh;

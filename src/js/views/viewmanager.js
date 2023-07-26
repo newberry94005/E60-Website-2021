@@ -29,7 +29,7 @@ viewManager.registerView = (view, go=true, args)=>{
 
 viewManager.hideViews = ()=>{
     // Add in all VIEWS here to fade all out
-    $("#home, #davyRoom, #egyptRoom, #ransomRoom, #casinoRoom, #witchRoom, #footer, .reviews, .sanitation, .hours, #faqs, #groups, #what, #how, #giftcards, #bookNow").fadeOut(viewManager.fadeOutTime).promise().done(function(){
+    $("#home, #davyRoom, #egyptRoom, #ransomRoom, #casinoRoom, #witchRoom, #afterhoursRoom, #footer, .reviews, .sanitation, .hours, #faqs, #groups, #what, #how, #giftcards, #bookNow").fadeOut(viewManager.fadeOutTime).promise().done(function(){
         //console.log(utils.momentGetTimeFormat(moment().format())+": "+"All Views Have Been Removed");
         goToView();
     });
@@ -85,6 +85,10 @@ function goToView(){
             viewManager.currentView = "witchRoom";
             viewManager.loadView("#witchRoom", witchRoom.setWitchRoomPage);
             viewManager.pageViewAnalytics("WITCH");
+        }else if(newView === "afterhoursRoom"){
+            viewManager.currentView = "afterhoursRoom";
+            viewManager.loadView("#afterhoursRoom", afterhoursRoom.setAfterhoursRoomPage);
+            viewManager.pageViewAnalytics("AFTERHOURS");
         }else if(newView === "rouletteRoom"){
             viewManager.currentView = "rouletteRoom";
             viewManager.loadView("#casinoRoom", casinoRoom.setCasinoRoomPage);
